@@ -1,19 +1,18 @@
 package com.example.demo.hibernatetips.entity;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 @Entity
 @Data
-public class OrderLine
+public class Product
 {
     @Id
     @GeneratedValue
     Integer id;
-
-    Integer productId;
 }
